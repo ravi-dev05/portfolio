@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -23,9 +22,48 @@
 
   <!-- MAIN CONTENT -->
   <main>
-    <!-- Sidebar and Main Content -->
-    <!-- Ahiya tame tamaro index.html nu content muki do (tamaru existing content) -->
-    <!-- JE CODE TAME MUKYO E BADHU SAME HOVU JOIYE -->
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+      <h2>Sidebar</h2>
+    </aside>
+
+    <!-- MAIN CONTENT AREA -->
+    <div class="main-content">
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><button class="navbar-link active" data-nav-link>About</button></li>
+          <li><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li><button class="navbar-link" data-nav-link>Portfolio</button></li>
+          <li><button class="navbar-link" data-nav-link>Contact</button></li>
+        </ul>
+      </nav>
+
+      <!-- ABOUT PAGE -->
+      <article class="about active" data-page="about">
+        <h2>About Page</h2>
+        <p>Hi, I'm Ravi! This is my portfolio.</p>
+      </article>
+
+      <!-- RESUME PAGE -->
+      <article class="resume" data-page="resume">
+        <h2>Resume Page</h2>
+        <p>My experience and education.</p>
+      </article>
+
+      <!-- PORTFOLIO PAGE -->
+      <article class="portfolio" data-page="portfolio">
+        <h2>Portfolio Page</h2>
+        <p>My projects will be here.</p>
+      </article>
+
+      <!-- CONTACT PAGE -->
+      <article class="contact" data-page="contact">
+        <h2>Contact Page</h2>
+        <p>Contact me here.</p>
+      </article>
+    </div>
   </main>
 
   <!-- Custom JS -->
@@ -35,5 +73,4 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-
 </html>
